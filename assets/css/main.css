@@ -1,12 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
-/*
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -32,6 +26,34 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
+.chatbot-button-image {
+    position: fixed;
+    right: 40px;
+    bottom: 100px; /* Adjust as needed */
+    z-index: 1001;
+    cursor: pointer; /* To show it's clickable */
+    border-radius: 50%; /* This makes the image rounded */
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    object-fit: cover; /* This ensures the image covers the area without stretching */
+}
+
+
+.chatbot {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 1000;
+    display: none; 
+}
+
+.minimize-chatbot-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 
 ol, ul {
 	list-style: none;

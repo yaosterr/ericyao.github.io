@@ -1,9 +1,3 @@
-/*
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	var $window = $(window),
@@ -156,4 +150,19 @@
 			}
 		});
 
+				document.addEventListener('DOMContentLoaded', function() {
+					var chatbot = document.getElementById('chatbot');
+					var chatbotToggle = document.getElementById('chatbotToggle');
+					var minimizeChatbot = document.getElementById('minimizeChatbot');
+
+					chatbotToggle.addEventListener('click', function() {
+						chatbot.style.display = 'block';
+						chatbotToggle.style.display = 'none'; // Hide the toggle button
+					});
+
+					minimizeChatbot.addEventListener('click', function() {
+						chatbot.style.display = 'none';
+						chatbotToggle.style.display = 'block'; // Show the toggle button again
+					});
+				});
 })(jQuery);
